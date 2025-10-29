@@ -1,0 +1,187 @@
+/* Reset cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eceef7;
+    color: #222;
+}
+
+.ltdl_navbar {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.ltdl_navlist {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ltdl_navlink {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.ltdl_navlink strong {
+    font-weight: 700;
+}
+
+.ltdl_navlink:hover {
+    text-decoration: underline;
+}
+
+/* Container chính */
+.ltdl_container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* Promo section */
+
+
+.ltdl_promo-text {
+    flex: 1;
+}
+
+.ltdl_promo-text h2 {
+    font-weight: normal;
+}
+.ltdl_readmore {
+    color: #b0d1ff;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Hình ảnh promo */
+ltdl_promo-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ltdl_promo-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.ltdl_promo-img2 {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ltdl_promo-img2 img {
+    height: 50Spx;
+    width: auto;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.4);
+    transition: transform 0.2s ease;
+}
+/* Form style */
+.ltdl_form {
+    width: 100%;
+}
+
+.ltdl_form-row {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: calc(50% - 10px);
+    vertical-align: top;
+}
+
+.ltdl_form-row.full-width {
+    width: 100%;
+}
+
+.ltdl_form-row label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.ltdl_form-row input,
+.ltdl_form-row select {
+    width: 100%;
+    padding: 8px 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.ltdl_form-row input:focus,
+.ltdl_form-row select:focus {
+    outline: none;
+    border-color: #2c6eb0;
+    box-shadow: 0 0 5px #2c6eb0;
+}
+
+.ltdl_error {
+    display: block;
+    font-size: 11px;
+    color: red;
+    margin-top: 2px;
+    min-height: 14px;
+}
+
+.checkbox-row {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.ltdl_btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ltdl_btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.ltdl_footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ltdl_promo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ltdl_promo-img img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .ltdl_form-row {
+        width: 100%;
+    }
+}

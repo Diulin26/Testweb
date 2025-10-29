@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng nhập Digital R50 - LTDL Form</title>
+    <meta name="description" content="Form đăng nhập Digital R50 với thiết kế đẹp, responsive và kiểm tra thông tin nhập hợp lệ." />
+    <link rel="stylesheet" href="LTDL.css" />
+</head>
+<body>
+    <nav class="ltdl_navbar">
+        <ul class="ltdl_navlist">
+            <li><a href="#" class="ltdl_navlink"><strong>Home</strong></a></li>
+            <li><a href="#" class="ltdl_navlink">About Us</a></li>
+            <li><a href="#" class="ltdl_navlink">Projects</a></li>
+            <li><a href="#" class="ltdl_navlink">Services</a></li>
+            <li><a href="#" class="ltdl_navlink">Support</a></li>
+            <li><a href="#" class="ltdl_navlink">Contact Us</a></li>
+            <li><a href="#" class="ltdl_navlink">Privacy</a></li>
+        </ul>
+    </nav>
+
+    <main class="ltdl_container">
+        <section class="ltdl_promo">
+            <div class="ltdl_promo-img">
+                <img src="/mainbanner.jpg" alt="Digital R50" />
+            </div>
+            <div class="ltdl_promo-img2">
+                <img src="/mac.jpg" alt="Digital R50" />
+                <img src="/3.jpg" alt="Digital R50" />
+            </div>
+        </section>
+
+        <form id="ltdl_form" class="ltdl_form" novalidate>
+            <div class="ltdl_form-row">
+                <label for="ltdl_email">Email</label>
+                <input type="email" id="ltdl_email" name="email" placeholder="Nhập email" required />
+                <span class="ltdl_error" id="error_email"></span>
+            </div>
+            <div class="ltdl_form-row">
+                <label for="ltdl_password">Password</label>
+                <input type="password" id="ltdl_password" name="password" placeholder="Nhập mật khẩu" required minlength="6" />
+                <span class="ltdl_error" id="error_password"></span>
+            </div>
+            <div class="ltdl_form-row full-width">
+                <label for="ltdl_address">Address</label>
+                <input type="text" id="ltdl_address" name="address" placeholder="123 Main st" required />
+                <span class="ltdl_error" id="error_address"></span>
+            </div>
+            <div class="ltdl_form-row full-width">
+                <label for="ltdl_address2">Address 2</label>
+                <input type="text" id="ltdl_address2" name="address2" placeholder="Apartment, studio, or floor" />
+            </div>
+            <div class="ltdl_form-row">
+                <label for="ltdl_city">City</label>
+                <input type="text" id="ltdl_city" name="city" required />
+                <span class="ltdl_error" id="error_city"></span>
+            </div>
+            <div class="ltdl_form-row">
+                <label for="ltdl_state">State</label>
+                <select id="ltdl_state" name="state" required>
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                    <option>Florida</option>
+                    <option>New York</option>
+                    <option>Texas</option>
+                </select>
+                <span class="ltdl_error" id="error_state"></span>
+            </div>
+            <div class="ltdl_form-row">
+                <label for="ltdl_zip">Zip</label>
+                <input type="text" id="ltdl_zip" name="zip" required pattern="\d{5}" maxlength="5" />
+                <span class="ltdl_error" id="error_zip"></span>
+            </div>
+            <div class="ltdl_form-row checkbox-row">
+                <input type="checkbox" id="ltdl_check" name="check" />
+                <label for="ltdl_check">Check me out</label>
+            </div>
+            <button type="submit" class="ltdl_btn-submit">Sign in</button>
+        </form>
+    </main>
+
+    <footer class="ltdl_footer">
+        <p>Copyright (c) Sitename.com. All rights reserved. Design by Stylish <a href="https://www.website-templates.com" target="_blank" rel="noopener noreferrer">Website Templates</a>.</p>
+    </footer>
+
+    <script src="LTDL.js"></script>
+</body>
+</html>
